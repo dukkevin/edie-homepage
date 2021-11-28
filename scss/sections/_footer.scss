@@ -1,0 +1,29 @@
+@use '../custom' as *;
+
+.footer-area {
+    background-color: $footer-bg;
+}
+.secundary-nav {
+    font-size: 1.125rem;
+    a {
+        color: $white;
+    }
+}
+.social-name {
+    color: $white;
+    font-size: 2.25rem;
+    font-family: "Heebo", sans-serif;
+}
+.secundary-input {
+    max-width: 350px;
+}
+.copyright {
+    color: $white;
+    font-size: .875rem;
+    font-weight: 300;
+    text-align: center;
+}
+.copyright a {
+    color: $white;
+    font-weight: 500;
+}

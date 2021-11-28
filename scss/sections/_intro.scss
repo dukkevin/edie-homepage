@@ -1,0 +1,63 @@
+@use '../custom' as *;
+
+.intro-question {
+  font-size: clamp(
+    12px,
+    calc(0.75rem + ((1vw - 5.76px) * 0.9615)),
+    18px
+  ) !important;
+}
+.img-hero {
+  border-radius: $img-border-radius;
+}
+.intro-description {
+  color: $gray-2;
+  font-size: clamp(12px, calc(0.75rem + ((1vw - 5.76px) * 0.9615)), 18px);
+  font-weight: 400;
+}
+.primary-input {
+  max-width: 350px;
+}
+.contact-question {
+  color: $gray-3;
+  font-size: clamp(
+    10px,
+    calc(0.625rem + ((1vw - 5.76px) * 0.641)),
+    14px
+  ) !important;
+}
+input,
+::placeholder,
+select,
+textarea {
+  color: $text-input !important;
+}
+.contact-input {
+  display: flex;
+
+  input {
+    flex: 1;
+    padding: 0.8em 0em 0.8em 1em;
+    background-color: $bg-input;
+    box-shadow: none;
+    border-radius: $input-border-radius 0 0 $input-border-radius;
+    border: none;
+    font-size: clamp(14px, calc(0.875rem + ((1vw - 5.76px) * 0.641)), 18px);
+  }
+  button {
+    display: flex;
+    align-items: center;
+    padding: 0 0.22em 0 0;
+    background-color: $bg-input;
+    border-radius: 0 $input-border-radius $input-border-radius 0;
+    border: none;
+    cursor: pointer;
+  }
+  button span {
+    padding: 0.55em 1.5em;
+    color: $white;
+    background-color: $blue;
+    border-radius: $input-border-radius;
+    font-size: clamp(14px, calc(0.875rem + ((1vw - 5.76px) * 0.641)), 18px);
+  }
+}

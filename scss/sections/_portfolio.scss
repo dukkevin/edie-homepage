@@ -1,0 +1,45 @@
+@use '../custom' as *;
+
+.img-zoom {
+    position: relative;
+	overflow: hidden;
+	max-width: 530px;
+    border-radius: $portfolio-border-radius;
+}
+.img-zoom img {
+	vertical-align: top;
+	max-width: 100%;
+	transition: all 0.3s;
+}
+.img-zoom:hover img {
+	transform: scale(1.1);
+}
+.portfolio-item {
+    max-height: 530px;
+    border-radius: $portfolio-border-radius;
+}
+.item-title {
+    color: $gray-100;
+    font-size: clamp(18px, calc(1.125rem + ((1vw - 5.76px) * 0.9615)), 24px);
+    font-weight: 500;
+}
+.item-description {
+    color: $gray-3;
+    font-size: clamp(12px, calc(0.75rem + ((1vw - 5.76px) * 0.3205)), 14px);
+    font-weight: 300;
+}
+
+.see-more-link i {
+    transition: all .4s ease-in-out;
+}
+.more-link {
+    color: $blue;
+    font-size: clamp(18px, calc(1.125rem + ((1vw - 5.76px) * 0.9615)), 24px);
+    font-weight: 500;
+}
+.more-link:hover ~ .more-arrow {
+    transform: translateX(5px);
+}
+.more-arrow {
+    color: $blue;
+}

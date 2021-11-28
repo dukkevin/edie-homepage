@@ -1,0 +1,28 @@
+@use '../custom' as *;
+
+.testimonial-content {
+    color: $gray-100;
+    font-size: clamp(24px, calc(1.5rem + ((1vw - 5.76px) * 1.9231)), 36px);
+    font-weight: 500;
+}
+.testimonial-avatar {
+    width: 82px;
+    height: 82px;
+    border-radius: $avatar-border-radius;
+}
+.testimonial-name {
+    color: $gray-100;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.testimonial-description {
+    color: $gray-3;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonial-content {
+        width: 80%;
+    }
+}

@@ -1,0 +1,33 @@
+@use '../custom' as *;
+
+.team-description {
+    color: $red;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.team-title {
+    color: $gray-100;
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+.team-content {
+    color: $gray-2;
+}
+.first-image {
+    width: 100%;
+    max-width: 320px;
+}
+.team-avatars {
+    flex-shrink: 5;
+}
+.team-avatars img {
+    border-radius: $team-border-radius;
+}
+.second-image {
+    width: 90%;
+    max-width: 260px;
+}
+.third-image {
+    width: 98%;
+    max-width: 290px;
+}
